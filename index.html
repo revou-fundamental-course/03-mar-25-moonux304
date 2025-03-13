@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+        
+    <!-- untuk pemanggilan css -->
+    <link rel="stylesheet" href="css/style.css">
+    
+
+    <!-- link untuk icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=local_florist" />
+
+
+    <!-- link untuk fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&disppaky=swap" rel="stylesheet">
+
+    <!-- link font titan one -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+
+    <title>Mini project</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="main-header" id="section1">
+        <a href="#" class="logo"><span class="material-symbols-outlined">local_florist</span>wulan suryani</a>
+
+        <!-- navigasi bar -->
+        <ul>
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">My Profile</a></li>
+            <li><a href="#section3">Messege us</a></li>
+        </ul>
+    </header>
+
+    <!-- section home -->
+    <section class="section home" id="section1">
+        <h1>Hi, <span id="username">Moon</span>! Welcom to my website</h1>
+        <span>Aku adalah Prakāśa dalam perjalanan yang tak berujung</span>
+        <button> Start now</button>
+        
+        <!-- banner auto slide -->
+        <img src="asset/10671.jpg" alt="" class="banner-img banner-1">
+        <img src="asset/5885.jpg" alt="" class="banner-img banner-2">
+        <img src="asset/9649095_6909.svg" alt="" class="banner-img banner-3">
+    </section>
+    
+    <!-- section my profil -->
+    <section id="section2">
+        <h2 class="profil">About</h2>
+        <h2 class="me">Me</h2>
+
+        <div class="box">
+            <img src="asset/yeri 220326.png" alt="">
+            <div>
+                <p>Di bawah cahaya ran, aku berjalan</p>
+                <p>di jalur yang tak terlihat, mencari</p> 
+                <p>arti dalam setiap langkah dan</p> 
+                <p>menemukan keindahan dalam ketidakpastian.</p> 
+                <p>Mari melangkah bersama.”</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- section messege us -->
+    <section id="section3" style="margin-top: 100px">
+        <header>Messege Us</header>
+        <div class="message content">
+            <!-- form -->
+            <div><form action="" >
+                <table>
+                    <!-- input nama -->
+                    <tr>
+                        <td><label for="name-input">Name :</label></td>
+                        <td><input type="text" id="name-input" name="name" placeholder="Your Name" required></td>
+                    </tr>
+
+                    <!-- input tanggal lahir -->
+                    <tr>
+                        <td><label for="tanggal-lahir">Tanggal Lahir :</label></td>
+                        <td><input type="date" id="tanggal-lahir" name="tanggal" placeholder="your birthday" required></td>
+                    </tr>
+
+                    <!-- input jenis jelamin -->
+                    <tr class="jenis kelamin">
+                        <td><label>Jenis Kelamin :</label></td>
+                        <td>
+                            <input type="radio" id="laki" name="gender" value="laki-laki">
+                            <label for="laki">Laki-laki</label>
+                        
+                            <input type="radio" id="perempuan" name="gender" value="perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </td>
+                    </tr>
+
+                    <!-- input pesan -->
+                    <tr>
+                        <td><label for="pesan">Pesan :</label></td>
+                        <td><textarea name="pesan" rows="5" cols="40" id="pesan" placeholder="tulis pesanmu disini..." required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="validateForm()">Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+            <div class="validation-result" id="validation-result"></div>
+            
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <hr>
+        <h6>@wulan suryani</h6>
+    </footer>
+
+    <!-- link ke js -->
+    <script src="js/script.js"></script>
+</body>
+</html>

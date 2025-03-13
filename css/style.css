@@ -1,0 +1,271 @@
+/*untuk cssnya*/
+
+/* buat scroll lebih smooth */
+html {
+    scroll-behavior: smooth;
+    /* Mengaktifkan efek scrolling yang lebih halus */
+}
+
+/* body webnya */
+body{
+    background: #fff;
+    margin: 0px;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+/* untuk header */
+.main-header{
+    margin: 0px;
+    background: #c1ebff;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+} 
+/* logo */
+a.logo{
+    font-size: 15px;
+    gap: 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+/* untuk navigasi */
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* untuk font */
+.tilt-warp {
+    display: flex;
+    margin: 0px;
+    font-size: 100px;
+    font-family: "Tilt Warp", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "XROT" 0,
+      "YROT" 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: #B9D8E6;
+}
+/* untuk style mind */
+.tilt-warp1{
+    display: flex;
+    margin: 4px;
+    font-size: 100px;
+    font-family: "Tilt Warp", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "XROT" 0,
+      "YROT" 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: #B1D122;
+    line-height: 0.2px;
+
+}
+/* untuk font header didalam section */
+h1{
+    margin-bottom: 1px;
+    font-size: 33px;
+    font-family: 'Poppins', sans-serif;
+    color: #5483b3;
+    margin-left: 20px;
+}
+span{
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    margin-top: 10px;
+    color: #fff;
+    background: #052559;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+/*.section.home{
+    display: flex;
+    align-items: center;
+}
+
+/* untuk elemen img di homepage */
+img{
+    max-width: 400px;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* section my profil */
+.profil{
+    margin-bottom: 0px;
+    margin-left: 200px;
+    font-family: 'Tilt Warp';
+    color: #B1D122;
+    font-size: 90px;
+    justify-content: center;
+}
+.me{
+    margin-bottom: 0px;
+    margin-left: 300px;
+    font-family: 'Tilt Warp';
+    color: #B1D122;
+    font-size: 90px;
+    justify-content: center;
+    margin-top: 0px;
+}
+.box{
+    overflow: hidden;
+    /*align-items: center;*/
+    gap: 40px;
+    display: flex;
+    border-radius: 58px;
+    margin-left: 350px;
+    background: #B9D8E6;
+    width: 240px;
+    height: 360px;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+p{
+    width: 330px;
+    margin: 0px;
+    font-family: 'Poppins';
+    color: black;
+}
+
+/* untuk header didalam section */
+header{
+    font-size: 20px;
+    font-family: 'Poppins';
+    margin-left: 100px;
+}
+
+/* untuk form message us */
+.message.content{
+    margin-right: 100px;
+    display: flex;
+    margin-left: 100px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    justify-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Styling hasil validasi */
+.validation-result {
+    background: #5a7ba5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 300px;
+    min-height: 200px;
+    justify-content: center;
+}
+h6{
+    margin: 10px;
+    font-family: 'Poppins';
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+#section2{
+    margin-bottom: 50px;
+    min-height: auto;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 480px) {
+    .main-header {
+        flex-direction: column;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Biar rata tengah */
+    }
+
+    .profil, .me {
+        margin-left: 0px; /* Hapus margin kiri */
+        text-align: center; /* Biar teks rata tengah */
+        font-size: 60px; /* Sesuaikan ukuran biar lebih kecil */
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center; /* Tengahin isi box */
+        margin-left: 0px; /* Hapus margin kiri */
+        width: 90%; /* Biar nggak terlalu kecil */
+    }
+
+    p {
+        text-align: center;
+        width: 90%; /* Supaya paragraph nggak kepanjangan */
+    }
+    .section.home{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-img-1{
+        max-width: 100%;  /* Supaya full lebar di HP */
+    }
+    .banner-img-2{
+        max-width: 100%;  /* Supaya full lebar di HP */
+    }
+    .banner-img-3{
+        max-width: 100%;  /* Supaya full lebar di HP */
+    }
+    .message.content {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Biar tidak terlalu kecil */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .message.content div {
+        width: 90%; /* Biar tidak terlalu besar */
+    }
+
+    input, textarea {
+        width: 100%; /* Biar input dan teks area menyesuaikan */
+    }
+    #section2{
+        margin-bottom: 50px;
+        min-height: 750px;
+    }
+}
